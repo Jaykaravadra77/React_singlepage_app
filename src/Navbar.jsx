@@ -19,7 +19,7 @@ function Navbar() {
                                         <ul className="navbar-nav ms-auto ">
 
                                             <li className="nav-item mx-1" >
-                                                <NavLink activeClassName="a" className="red" style={{ textDecoration: "none", color: "white",fontSize:"18px" }} to="/" >Home</NavLink>
+                                                <NavLink activeClassName="a" className="red" style={{ textDecoration: "none", color: "white",fontSize:"18px" }} to="/React_singlepage_app" >Home</NavLink>
                                             </li>
                                             <li className="nav-item mx-1">
                                                 <NavLink activeClassName="a" className="red" style={{ textDecoration: "none", color: "white",fontSize:"18px" }} to="/about" >About</NavLink>

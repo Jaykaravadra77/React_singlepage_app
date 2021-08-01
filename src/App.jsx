@@ -7,19 +7,24 @@ import Contact from './Contact';
 import About from './About';
 import Services from './Services';
 import Footer from './Footer';
-import {Route,Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 function App() {
+  function NotFound() {
+    return (<h1>Oops PAGE NOT FOUND</h1>)
+
+  }
   return (
     <>
-    <Navbar/>
-    <Switch>
-      <Route exact path="/" component={Home} /> 
-      <Route exact path="/about" component={About} /> 
-      <Route exact path="/services" component={Services} />
-      <Route exact path="/contact" component={Contact} />
-    </Switch>
-   <Footer/>
-    
+      <Navbar />
+      <Switch>
+        <Route exact path="/React_singlepage_app" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/services" component={Services} />
+        <Route exact path="/contact" component={Contact} />
+        <Route component={NotFound} />
+      </Switch>
+      <Footer />
+
     </>
   )
 }
